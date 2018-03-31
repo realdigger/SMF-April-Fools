@@ -32,6 +32,7 @@ function loadAprilFoolsHooks()
     add_integration_function('integrate_load_theme', 'loadAprilFoolsAssets', false);
     add_integration_function('integrate_menu_buttons', 'addAprilFoolsForUsers', false);
     add_integration_function('integrate_load_theme', 'addAprilFoolsForCurrentUser', false);
+    add_integration_function('integrate_menu_buttons', 'addAprilFoolsForCurrentUserProfile', false);
 }
 
 
@@ -97,12 +98,12 @@ function addAprilFoolsForUsers()
 
 
 /**
- * Add gravatar to forum header for current member
+ * Add april fools to forum header for current member
  * @return bool
  */
 function addAprilFoolsForCurrentUser()
 {
-    global $modSettings, $context, $user_info;
+    global $modSettings, $context;
 
     // Is it test mode?
     if (!empty($modSettings['april_fools_test_mode']) && empty($context['user']['is_admin'])) {
@@ -110,13 +111,36 @@ function addAprilFoolsForCurrentUser()
     }
 
     if (!empty($modSettings['april_fools_name_flip'])) {
-        $user_info['name'] = flipAprilFoolsName($user_info['name']);
+        $context['user']['name'] = flipAprilFoolsName($context['user']['name']);
     }
 
     if (!empty($modSettings['april_fools_name_fl_flip'])) {
-        $user_info['name'] = flipAprilFoolsNameFL($user_info['name']);
+        $context['user']['name'] = flipAprilFoolsNameFL($context['user']['name']);
     }
 
+}
+
+
+/**
+ * Add april fools to current member profile
+ * @return bool
+ */
+function addAprilFoolsForCurrentUserProfile()
+{
+    global $modSettings, $context;
+
+    // Is it test mode?
+    if (!empty($modSettings['april_fools_test_mode']) && empty($context['user']['is_admin'])) {
+        return false;
+    }
+
+    if (!empty($modSettings['april_fools_name_flip']) && !empty($context['member'])) {
+        $context['member']['name'] = flipAprilFoolsName($context['member']['name']);
+    }
+
+    if (!empty($modSettings['april_fools_name_fl_flip']) && !empty($context['member'])) {
+        $context['member']['name'] = flipAprilFoolsNameFL($context['member']['name']);
+    }
 }
 
 
