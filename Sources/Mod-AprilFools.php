@@ -23,14 +23,13 @@ function loadAprilFoolsHooks()
     add_integration_function('integrate_admin_include', '$sourcedir/Mod-AprilFools-Admin.php', false);
     add_integration_function('integrate_admin_areas', 'addAprilFoolsAdminArea', false);
     add_integration_function('integrate_modify_modifications', 'addAprilFoolsAdminAction', false);
-
+    add_integration_function('integrate_menu_buttons', 'addAprilFoolsCopyright', false);
 
     if (empty($modSettings['april_fools_enabled'])) {
         return;
     }
 
     add_integration_function('integrate_load_theme', 'loadAprilFoolsAssets', false);
-    add_integration_function('integrate_menu_buttons', 'addAprilFoolsCopyright', false);
     add_integration_function('integrate_menu_buttons', 'addAprilFoolsForUsers', false);
     add_integration_function('integrate_load_theme', 'addAprilFoolsForCurrentUser', false);
 }
