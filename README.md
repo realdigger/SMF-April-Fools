@@ -5,7 +5,7 @@
 [![Hooks](https://img.shields.io/badge/hooks%20only-✓-blue.svg?style==flat)]()
 [![license](https://img.shields.io/github/license/realdigger/SMF-April-Fools.svg)]()
 
-# SMF April Fools [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=SMF%20April%20Fools%204&url=https://github.com/realdigger/SMF-April-Fools&hashtags=smf,april_fools)
+# SMF April Fools [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=SMF%20April%20Fools%20&url=https://github.com/realdigger/SMF-April-Fools&hashtags=smf,april_fools)
 * **Author:** digger [http://mysmf.net](http://mysmf.net)
 * **License:** The MIT License (MIT) https://opensource.org/licenses/MIT
 * **Compatible with:** SMF 2.0, SMF 2.1
