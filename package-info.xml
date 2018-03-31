@@ -5,7 +5,7 @@
     <id>digger:april_fools</id>
     <name>April Fools</name>
     <type>modification</type>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <install for="2.0 - 2.1.99">
         <readme>README.md</readme>
