@@ -2,8 +2,8 @@
 /**
  * @package SMF April Fools
  * @file Mod-AprilFools.php
- * @author digger <digger@mysmf.net> <http://mysmf.net>
- * @copyright Copyright (c) 2018, digger
+ * @author digger <digger@mysmf.net> <https://mysmf.net>
+ * @copyright (c) 2018-2019, digger
  * @license The MIT License (MIT) https://opensource.org/licenses/MIT
  * @version 1.0
  */
@@ -191,6 +191,6 @@ function addAprilFoolsCopyright()
     global $context;
 
     if ($context['current_action'] == 'credits') {
-        $context['copyrights']['mods'][] = '<a href="http://mysmf.net/mods/april-fools" target="_blank">April Fools</a> &copy; 2018, digger';
+        $context['copyrights']['mods'][] = '<a href="https://mysmf.net/mods/april-fools" target="_blank">April Fools</a> &copy; 2018-2019, digger';
     }
 }

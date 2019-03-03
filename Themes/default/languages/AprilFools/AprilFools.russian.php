@@ -2,8 +2,8 @@
 /**
  * @package SMF April Fools
  * @file AprilFools.russian.php
- * @author digger <digger@mysmf.net> <http://mysmf.net>
- * @copyright Copyright (c) 2018, digger
+ * @author digger <digger@mysmf.net> <https://mysmf.net>
+ * @copyright (c) 2018-2019, digger
  * @license The MIT License (MIT) https://opensource.org/licenses/MIT
  * @version 1.0
  */
