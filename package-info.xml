@@ -19,6 +19,7 @@
     <uninstall for="2.0 - 2.1.99">
         <remove-dir name="$languagedir/AprilFools"/>
         <remove-file name="$sourcedir/Mod-AprilFools.php"/>
+        <remove-file name="$sourcedir/Mod-AprilFools-Admin.php"/>
         <modification reverse="true">modification.xml</modification>
         <database>hooks.php</database>
     </uninstall>
