@@ -5,23 +5,23 @@
     <id>digger:april_fools</id>
     <name>April Fools</name>
     <type>modification</type>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
-    <install for="2.0 - 2.1.99">
+    <install for="2.0 - 2.0.99">
         <readme>README.bbc</readme>
         <require-dir name="Sources" destination="$boarddir"/>
         <require-dir name="Themes" destination="$boarddir"/>
         <modification>modification.xml</modification>
-        <database>hooks.php</database>
+        <code>hooks.php</code>
         <redirect url="?action=admin;area=modsettings;sa=april_fools" timeout="5000"/>
     </install>
 
-    <uninstall for="2.0 - 2.1.99">
+    <uninstall for="2.0 - 2.0.99">
         <remove-dir name="$languagedir/AprilFools"/>
         <remove-file name="$sourcedir/Mod-AprilFools.php"/>
         <remove-file name="$sourcedir/Mod-AprilFools-Admin.php"/>
         <modification reverse="true">modification.xml</modification>
-        <database>hooks.php</database>
+        <code>hooks.php</code>
     </uninstall>
 
 </package-info>

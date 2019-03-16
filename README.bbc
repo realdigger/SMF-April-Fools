@@ -1,11 +1,11 @@
 # SMF April Fools
-* **Author:** digger [https://mysmf.net](https://mysmf.net)
-* **License:** The MIT License (MIT) https://opensource.org/licenses/MIT
-* **Compatible with:** SMF 2.0, SMF 2.1
-* **Languages:** English, Russian
+* Author: digger [https://mysmf.net](https://mysmf.net)
+* License: The MIT License (MIT) https://opensource.org/licenses/MIT
+* Compatible with: SMF 2.0
+* Languages: English, Russian
 
 ## Installation  
-Download and install latest release tar.gz file from [releases page](https://github.com/realdigger/SMF-April-Fools/releases).
+Download and install latest release tar.gz file from [url=https://github.com/realdigger/SMF-April-Fools/releases]releases page[/url].
 
 ## Description
 April Fools mod for your forum.
@@ -14,16 +14,4 @@ April Fools mod for your forum.
 * Member names backwards
 * Swap the first and last letter of member names
 * Flip avatars
-* Funny dates (only for russian language) 
-
-## Установка    
-Загрузите и установите файл tar.gz актуальной версии со [страницы загрузок](https://github.com/realdigger/SMF-April-Fools/releases).
-
-## Описание
-Мод первоапрельских шуток для вашего форума SMF.
-
-### Возможности
-* Ники задом наперед
-* Смена мест первой и последней буквы в никах
-* Зеркальные аватары
-* Cмешные даты (только для русского языка)
+* Funny dates (only for russian language)
