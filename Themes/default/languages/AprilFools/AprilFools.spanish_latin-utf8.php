@@ -22,4 +22,4 @@ $txt['april_fools_funny_dates'] = 'Fechas divertidas';
 $txt['april_fools_funny_days'] = array();
 $txt['april_fools_funny_months'] = array();
 $txt['april_fools_funny_months_titles'] = array();
-<?
+?>
