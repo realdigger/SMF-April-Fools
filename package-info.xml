@@ -5,10 +5,10 @@
     <id>digger:april_fools</id>
     <name>April Fools</name>
     <type>modification</type>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
 
     <install for="2.0 - 2.0.99">
-        <readme>README.bbc</readme>
+        <readme parsebbc="true">README.bbc</readme>
         <require-dir name="Sources" destination="$boarddir"/>
         <require-dir name="Themes" destination="$boarddir"/>
         <modification>modification.xml</modification>
