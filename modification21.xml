@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<name>April Fools</name>
+	<id>digger:april_fools</id>
+	<version>1.0</version>
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="replace"><![CDATA[
+	if ($locale_cache !== false)]]></search>
+			<add><![CDATA[
+	if ($locale_cache !== false && empty($modSettings['april_fools_funny_dates']))]]></add>
+	    </operation>
+	</file>
+</modification>
