@@ -5,13 +5,14 @@
     <id>digger:april_fools</id>
     <name>April Fools</name>
     <type>modification</type>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
+
 
     <install for="2.0 - 2.0.99">
         <readme parsebbc="true">README.bbc</readme>
         <require-dir name="Sources" destination="$boarddir"/>
         <require-dir name="Themes" destination="$boarddir"/>
-        <modification>modification20.xml</modification>
+        <modification>SMF2.0/modification.xml</modification>
         <code>hooks.php</code>
         <redirect url="?action=admin;area=modsettings;sa=april_fools" timeout="5000"/>
     </install>
@@ -20,24 +21,25 @@
         <remove-dir name="$languagedir/AprilFools"/>
         <remove-file name="$sourcedir/Mod-AprilFools.php"/>
         <remove-file name="$sourcedir/Mod-AprilFools-Admin.php"/>
-        <modification reverse="true">modification20.xml</modification>
+        <modification reverse="true">SMF2.0/modification.xml</modification>
         <code>hooks.php</code>
     </uninstall>
 
-    <install for="2.1 - 2.1.99, 2.1 Beta 4, 2.1 RC1">
+    <install for="2.1 - 2.1.99, 2.1 Beta 4, 2.1 RC1, 2.1 RC2">
         <readme parsebbc="true">README.bbc</readme>
         <require-dir name="Sources" destination="$boarddir"/>
         <require-dir name="Themes" destination="$boarddir"/>
-        <modification>modification21.xml</modification>
+        <require-file from="SMF2.1/AprilFools.russian.php" destination="$languagedir/AprilFools/AprilFools.russian.php" />
+        <modification>SMF2.1/modification.xml</modification>
         <code>hooks.php</code>
         <redirect url="?action=admin;area=modsettings;sa=april_fools" timeout="5000"/>
     </install>
 
-    <uninstall for="2.1 - 2.1.99, 2.1 Beta 4, 2.1 RC1">
+    <uninstall for="2.1 - 2.1.99, 2.1 Beta 4, 2.1 RC1, 2.1 RC2">
         <remove-dir name="$languagedir/AprilFools"/>
         <remove-file name="$sourcedir/Mod-AprilFools.php"/>
         <remove-file name="$sourcedir/Mod-AprilFools-Admin.php"/>
-        <modification reverse="true">modification21.xml</modification>
+        <modification reverse="true">SMF2.1/modification.xml</modification>
         <code>hooks.php</code>
     </uninstall>
 
