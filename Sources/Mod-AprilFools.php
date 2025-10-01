@@ -191,6 +191,6 @@ function addAprilFoolsCopyright()
     global $context;
 
     if ($context['current_action'] == 'credits') {
-        $context['copyrights']['mods'][] = '<a href="https://mysmf.net/mods/april-fools" target="_blank">April Fools</a> &copy; 2018-2019, digger';
+        $context['copyrights']['mods'][] = '<a href="https://mysmf.net/mods/april-fools" target="_blank">April Fools</a> &copy; 2018-2025, digger';
     }
 }
